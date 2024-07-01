@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const CartItem = () => {
+const CartItem = ({ item }) => {
   return (
-    <div>CartItem</div>
-  )
-}
+    <div>
+      <div>{item.title}</div>
+    </div>
+  );
+};
 
-export default CartItem
+export default CartItem;
