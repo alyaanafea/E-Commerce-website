@@ -8,26 +8,26 @@ const Product = ({ product }) => {
   const {addToCart,cart,setCart}=useContext(CartContext)
  
   return (
-    <div className="flex flex-col relative group overflow-hidden">
-      <div className="h-60 flex justify-center items-center border border-gray-100">
+    <div className="relative flex flex-col overflow-hidden group">
+      <div className="flex items-center justify-center border border-gray-100 h-60">
         <img
-          className="w-28 group-hover:scale-110 transition duration-300"
+          className="transition duration-300 w-28 group-hover:scale-110"
           src={product.image}
           alt=""
         />
       </div>
-      <div className="absolute -right-5 top-0 bg-white opacity-0 group-hover:right-0 group-hover:opacity-100 transition-all duration-300 p-1">
-        <button className="p-2 bg-red-500 hover:bg-red-300" onClick={()=>{addToCart(product)}}>
+      <div className="absolute top-0 p-1 transition-all duration-300 bg-white opacity-0 -right-5 group-hover:right-0 group-hover:opacity-100">
+        <button className="p-2 font-semibold text-white bg-red-500 hover:bg-red-300" onClick={()=>{addToCart(product)}}>
           <BsPlus />
         </button>
         <Link to={`product/${product.id}`}>
-          <div className="p-2  bg-white drop-shadow-md">
+          <div className="p-2 bg-white drop-shadow-md">
             <BsEye />
           </div>
         </Link>
       </div>
       <div className="my-4 ">
-        <h4 className="text-gray-500 text-sm">{product.category}</h4>
+        <h4 className="text-sm text-gray-500">{product.category}</h4>
         <Link to={`product/${product.id}`}>
           <h2 className="text-l hover:text-slate-600 ">{product.title}</h2>
         </Link>
