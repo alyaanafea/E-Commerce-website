@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="fixed flex items-center bg-white  border-b-2 justify-between p-3  z-[20] w-full ">
       <Link to={"/"}>
-        <img src="src\assets\images\logo.svg" alt="" className="w-8 " />
+        <img src="/images/logo.svg" alt="" className="w-8 " />
       </Link>
       <div
         className="px-3 font-bold cursor-pointer"

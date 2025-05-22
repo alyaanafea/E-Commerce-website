@@ -17,7 +17,7 @@ const Hero = () => {
           <Link to={"/"} className="underline ">DISCOVER MORE</Link>
         </div>
         <div className="hidden md:block lg:block">
-          <img src="src\assets\images\woman_hero.png" alt="" />
+          <img src="/images/woman_hero.png" alt="" />
         </div>
       </div>
     </section>

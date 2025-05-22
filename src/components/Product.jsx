@@ -5,7 +5,7 @@ import { CartContext } from "../context/cartContext";
 
 
 const Product = ({ product }) => {
-  const {addToCart,cart,setCart}=useContext(CartContext)
+  const {addToCart}=useContext(CartContext)
  
   return (
     <div className="relative flex flex-col overflow-hidden group">
